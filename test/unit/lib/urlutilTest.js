@@ -101,6 +101,9 @@ describe('urlutil', function () {
       it('has custom protocol', function () {
         assert.equal(urlUtil.isNotURL('brave://test'), false)
       })
+      it('is a string with multiple whitespace but has schema', function(){
+        assert.equal(urlUtil.isNotURL(' https://www.google.ca/search?q=dog cat '), false)
+      })
     })
 
     describe('returns true when input:', function () {
