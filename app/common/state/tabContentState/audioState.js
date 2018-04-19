@@ -38,7 +38,7 @@ module.exports.showAudioIcon = (state, frameKey) => {
 
   return (
     !isEntryIntersected(state, 'tabs') &&
-    module.exports.canPlayAudio(state, frameKey)
+    module.exports.canPlayAudio(state, frameKey) 
   )
 }
 
